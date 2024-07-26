@@ -1,0 +1,151 @@
+:root {
+    --bg-color: #1E1E1E;
+    --panel-bg: #2D2D2D;
+    --text-color: #E0E0E0;
+    --input-bg: #3D3D3D;
+    --input-border: #4D4D4D;
+    --button-bg: #0F62FE;
+    --button-hover: #0353E9;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    height: 100vh;
+}
+#preview-area {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color);
+}
+
+
+#phone-container {
+    width: 390px;
+    height: 844px;
+    background-color: black;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+
+#game-screen {
+    width: 100%;
+    height: 100%;
+}
+#control-panel {
+    width: 300px;
+    background-color: var(--panel-bg);
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+h2 {
+    margin-top: 0;
+    color: var(--text-color);
+    font-weight: normal;
+}
+.control-group {
+    margin-bottom: 20px;
+}
+
+.control-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+.control-item {
+    width: 48%;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--text-color);
+    font-size: 12px;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--text-color);
+}
+input[type="text"],
+input[type="number"],
+select {
+    width: -webkit-fill-available;
+    padding: 8px;
+    margin-bottom: 10px;
+    background-color: var(--input-bg);
+    border: 1px solid var(--input-border);
+    color: var(--text-color);
+    border-radius: 4px;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--button-bg);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: var(--button-hover);
+}
+#status {
+    margin-top: 20px;
+    padding: 0px;
+    border-radius: 4px;
+    font-size: 12px;
+    overflow-y: hidden;
+}
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+.input-group input {
+    width: 48%;
+}
+
+#animation-list {
+    max-height: 400px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    background-color: var(--input-bg);
+    border-radius: 4px;
+    padding: 10px;
+}
+#animation-list div {
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+#animation-list div:hover {
+    background-color: var(--input-border);
+}
+#animation-list div.active {
+    background-color: var(--button-bg);
+    color: white;
+}
+#status {
+    margin-top: 20px;
+    
+    border-radius: 4px;
+    font-size: 12px;
+    height: 164px;
+    overflow-y: hidden;
+}
