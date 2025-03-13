@@ -358,7 +358,7 @@ function adjustBackground() {
 async function getBgImages() {
     updateStatus('正在获取背景图像列表...');
     try {
-        const response = await fetch('http://localhost:8000/list-bg-images');
+        const response = await fetch('http://localhost:8001/list-bg-images');
         updateStatus(`服务器响应状态: ${response.status}`);
         if (!response.ok) {
             throw new Error(`服务器响应错误: ${response.status} ${response.statusText}`);
